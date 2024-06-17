@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Random guess number</title>
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <h1>Enter your guess number</h1>
+      <div class="num"><input type="number" name="number" id="number" required pattern="[0-9]{1}"></div>
+      <button onclick="ranNum()">Check</button>
+      <div id="loading-icon" class="loading-icon" style="display: none;"></div>
+      <div id="display" style="display: none;"></div>
+    </div>
+  </div>
+      <script src="js/main.js"></script>  
+</body>
+</html>

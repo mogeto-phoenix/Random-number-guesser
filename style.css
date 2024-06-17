@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    background-color: rgb(151, 148, 143);
+    width: 60%;
+    height: 50vh;
+}
+.num,h1,button,#display{
+    margin-bottom: 40px;
+}
+#display{
+    font-size: larger;
+    font-weight: 300;
+}
+input[type=number]{
+    width: 250px;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+button{
+    width: 250px;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color:black;
+    color:white;
+    font-size: large;
+    cursor: pointer; 
+}
+h1{
+    text-align: center;
+}
+.loading-icon{
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+ @keyframes spin{
+    0%{
+        transform:rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
